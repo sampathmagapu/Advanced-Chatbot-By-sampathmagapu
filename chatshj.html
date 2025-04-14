@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot Page</title>
+  <!-- Include Botpress WebChat script -->
+  <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?w=1060&t=st=1713424779~exp=1713425379~hmac=886253a02783d2c4481e004760dad468bc48d6ee9d168a4f044bd54a14fce6bb');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+    }
+    #webchat {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+<body>
+  <div id="webchat"></div> <!-- This is where the chatbot will be displayed -->
+  <script>
+    window.botpressWebChat.init({
+        "composerPlaceholder": "Chat with bot",
+        "botConversationDescription": "This chatbot was built surprisingly fast with Botpress",
+        "botId": "dc92535d-0bd0-4819-99e8-cbcb4b5b4f0b",
+        "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+        "messagingUrl": "https://messaging.botpress.cloud",
+        "clientId": "dc92535d-0bd0-4819-99e8-cbcb4b5b4f0b",
+        "webhookId": "880eb9e8-7988-48a6-87fe-cf6806c932b6",
+        "lazySocket": true,
+        "themeName": "prism",
+        "frontendVersion": "v1",
+        "showPoweredBy": true,
+        "theme": "prism",
+        "themeColor": "#2563eb"
+    });
+  </script>
+</body>
+</html>

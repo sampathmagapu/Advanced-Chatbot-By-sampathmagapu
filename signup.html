@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Signup</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url("https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?t=st=1713425313~exp=1713428913~hmac=ed8a97d142f55870241da145cc34a9aefa12219baf369573febde49e382ec021&w=1060");
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      width: 300px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      border-radius: 5px;
+      border: 1px solid #4bcbd2;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      background-color: #4bb4c0;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #8fc7d8;
+    }
+
+    /* Hover effect on the "User Signup" text */
+    h2 {
+      color: black;
+      transition: color 0.3s ease; /* Smooth transition for color change */
+    }
+
+    h2:hover {
+      color: red; /* Change text color to red on hover */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h2>User Signup</h2>
+    <form action="signup.php" method="POST">
+      <input type="text" placeholder="Username" name="username" required>
+      <input type="email" placeholder="Email" name="email" required>
+      <input type="password" placeholder="Password" name="password" required>
+
+      <input type="submit" value="Signup">
+    </form>
+  </div>
+</body>
+
+</html>
